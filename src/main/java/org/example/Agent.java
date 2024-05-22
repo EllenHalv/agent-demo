@@ -20,7 +20,7 @@ public class Agent {
     public static void main(String[] args) throws AgentLoadException, IOException, AgentInitializationException, AttachNotSupportedException {
         VirtualMachine vm = VirtualMachine.attach("279892"); // Change this id to match your PID
         try {
-            vm.loadAgent("C:/Users/ellen/IdeaProjects/agent-demo/target/agent-demo-1.0-SNAPSHOT.jar");
+            vm.loadAgent("C:/Users/ellen/IdeaProjects/agent-demo/target/agent-demo-1.0-SNAPSHOT.jar"); // Change this path to your JAR-file path
         } finally {
             vm.detach();
         }
