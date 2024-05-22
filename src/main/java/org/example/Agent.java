@@ -18,7 +18,7 @@ public class Agent {
 
     // Here we use VirtualMachine API to merge two programs/JAR-files to one JVM process.
     public static void main(String[] args) throws AgentLoadException, IOException, AgentInitializationException, AttachNotSupportedException {
-        VirtualMachine vm = VirtualMachine.attach("279892");
+        VirtualMachine vm = VirtualMachine.attach("279892"); // Change this id to match your PID
         try {
             vm.loadAgent("C:/Users/ellen/IdeaProjects/agent-demo/target/agent-demo-1.0-SNAPSHOT.jar");
         } finally {
