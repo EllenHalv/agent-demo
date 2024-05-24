@@ -1,4 +1,4 @@
-## Demo of Java Agent
+## Demo of Java Agent with dynamic loading
 
 Simple example of a Java Agent using VirtualMachine API to merge two programs to one single JVM process.
 
